@@ -1,13 +1,16 @@
 const express = require("express");
 const script = express.Router();
+const callGeminiApi = require("../API/geminiAPI");
 
 script.post("/", async (req, res) => {
   try {
-    const text = req.body;
+    const { text } = req.body; // Extract text input from the request body | The user's input text
 
     // Validate Input
     if (!text || typeof text !== "string") {
-      res.status(400).json({ error: "Invalid input. Please provide text." });
+      return res
+        .status(400)
+        .json({ error: "Invalid input. Please provide text." });
     }
 
     // Call AI Service
