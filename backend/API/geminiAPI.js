@@ -9,7 +9,7 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 async function callGeminiApi(userInput) {
   try {
     // Construct the prompt
-    const prompt = `Make the following text into a podcast script:\n\n"${userInput}"\n\nEnsure it's engaging and suitable for a podcast`;
+    const prompt = `Make the following text into a podcast script:\n\n"${userInput}"\n\nEnsure it's engaging and suitable for a podcast. Have an intro or engaging hook, 3 interesting points, and a conclusion`;
 
     console.log(userInput)
 
