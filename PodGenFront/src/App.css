@@ -1,0 +1,19 @@
+.pod_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid gray;
+  padding: 20px;
+  height: 200px;
+  width: 300px;
+}
+
+.upload-buttons{
+  display: flex;
+  justify-content: space-evenly
+}
+
+#transcript{
+  height: 100px;
+  width: 100%;
+}
