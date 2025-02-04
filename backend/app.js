@@ -7,6 +7,7 @@ const scriptController = require("./Controllers/scriptController");
 const audioFileController = require("./Controllers/audioFileController");
 
 //Middleware
+app.use(cors())
 app.use(express.json());
 app.use("/script", scriptController);
 app.use("/audioFile", audioFileController);
