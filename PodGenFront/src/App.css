@@ -8,12 +8,15 @@
   width: 300px;
 }
 
-.upload-buttons{
+.upload-buttons {
   display: flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 }
 
-#transcript{
+#transcript {
   height: 100px;
   width: 100%;
+  resize: none;
+  /* text-align: left;
+  vertical-align: top; */
 }
